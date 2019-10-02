@@ -1807,9 +1807,10 @@ External Setpoint Generation:
 				</Vars>
 			</Encoder>
 			<Drive Name="Drive" DrvType="24">
-				<DrvPara Inverse="true">
+				<DrvPara>
 					<Analog VeloReferenz="625"/>
 					<TimeComp TaskDelayCycles="1"/>
+					<ParameterChanged>6</ParameterChanged>
 				</DrvPara>
 				<Vars VarGrpType="1">
 					<Name>Inputs</Name>
@@ -1898,9 +1899,10 @@ Drive Status 4 (manually linked):
 			</Drive>
 			<Controller Name="Ctrl" CtrType="3">
 				<CtrPara PriorControlFactor="1">
-					<PosDiffControl Range="50" Time="0.2"/>
+					<PosDiffControl Range="75" Time="0.2"/>
 					<PID PosTn="0.005" PosIOutputLimit="0.0001" PosDOutputLimit="0" PosIDisableWhenMoving="true" DeadBandPosition="0.001"/>
 					<Observer BandWidth="20"/>
+					<ParameterChanged>18</ParameterChanged>
 				</CtrPara>
 			</Controller>
 			<Vars VarGrpType="1" InsertType="1">
@@ -2108,9 +2110,10 @@ Drive Status 4 (manually linked):
 			</Drive>
 			<Controller Name="Ctrl" CtrType="3">
 				<CtrPara PriorControlFactor="1">
-					<PosDiffControl Range="50" Time="0.2"/>
+					<PosDiffControl Range="75" Time="0.2"/>
 					<PID PosTn="0.005" PosIOutputLimit="0.0001" PosDOutputLimit="0" PosIDisableWhenMoving="true" DeadBandPosition="0.001"/>
 					<Observer BandWidth="20"/>
+					<ParameterChanged>18</ParameterChanged>
 				</CtrPara>
 			</Controller>
 			<Vars VarGrpType="1" InsertType="1">
@@ -2179,15 +2182,19 @@ External Setpoint Generation:
 			<Name>pitch</Name>
 			<AxisPara>
 				<General UnitName="urad"/>
-				<Dynamic Acceleration="64082.2" Deceleration="64082.2" Jerk="711156" DelayTime="0.008"/>
-				<Velo Maximum="450"/>
+				<Dynamic Acceleration="64082" Deceleration="64082" Jerk="711156" DelayTime="0.008"/>
+				<Velo Maximum="400"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
+				<ParameterChanged>39</ParameterChanged>
+				<ParameterChanged>257</ParameterChanged>
+				<ParameterChanged>258</ParameterChanged>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="0.00256" MaxCount="#xffffffff" ReferenceSystem="1">
+				<EncPara ScaleFactorNumerator="0.00244" MaxCount="#xffffffff" ReferenceSystem="1">
 					<ActPosCorrection Time="0.008"/>
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 					<ParameterChanged>7</ParameterChanged>
+					<ParameterChanged>35</ParameterChanged>
 				</EncPara>
 				<Vars VarGrpType="1">
 					<Name>Inputs</Name>
@@ -2230,7 +2237,7 @@ External Setpoint Generation:
 			</Encoder>
 			<Drive Name="Drive" DrvType="24">
 				<DrvPara Inverse="true">
-					<Analog VeloReferenz="498"/>
+					<Analog VeloReferenz="420"/>
 					<TimeComp TaskDelayCycles="1"/>
 				</DrvPara>
 				<Vars VarGrpType="1">
@@ -2321,8 +2328,9 @@ Drive Status 4 (manually linked):
 			<Controller Name="Ctrl" CtrType="3">
 				<CtrPara PriorControlFactor="1">
 					<PosDiffControl Range="10" Time="0.2"/>
-					<PID PosKp="9" PosTn="0.0006" PosTv="1.2e-005" PosIOutputLimit="0.0001" PosDOutputLimit="0.0035" AccKa="0.001" DeadBandPosition="0.001"/>
+					<PID PosKp="9" PosTn="0.0006" PosTv="1.2e-005" PosIOutputLimit="0.0005" PosDOutputLimit="0.0035" AccKa="0.001" DeadBandPosition="0.001"/>
 					<Observer BandWidth="20"/>
+					<ParameterChanged>278</ParameterChanged>
 				</CtrPara>
 			</Controller>
 			<Vars VarGrpType="1" InsertType="1">

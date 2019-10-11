@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.14">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
   <POU Name="MAIN" Id="{2ce36a91-321d-4828-96a2-d7e21b9a58d0}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -14,7 +14,9 @@ VAR
 	M4: DUT_MotionStage:=(nCommand:=3); // Xdwn
 //	{attribute 'TcLinkTo' := '.bLimFwd:=TIIB[pitch]^STM Status^Status^Digital input 1; .bLimBwd:=TIIB[pitch]^STM Status^Status^Digital input 2'}	
 	M5: DUT_MotionStage:=(nCommand:=3); // PitchCoarse
+
 	fbMotionStage_x_up, fbMotionStage_x_dwn, fbMotionStage_y_up, fbMotionStage_y_dwn, fbMotionStage_pitch : FB_MotionStage;
+
 	stoEnable AT %I* : BOOL;
 	{attribute 'TcLinkTo' := '.Count:=TIIB[1-x_up_2-x_dwn]^FB Inputs Channel 1^Position'}	
 	x_up_enc  AT %I*: ST_RenishawAbsEnc;
@@ -24,6 +26,7 @@ VAR
 	y_up_enc  AT %I*: ST_RenishawAbsEnc;
 	{attribute 'TcLinkTo' := '.Count:=TIIB[1-y_up_2-y_dwn]^FB Inputs Channel 2^Position'}
 	y_dwn_enc  AT %I*: ST_RenishawAbsEnc;
+
 	// Auto coupling function block
 	fbAutoCoupleX : FB_GantryAutoCoupling;
 	fbAutoCoupleY : FB_GantryAutoCoupling;
@@ -67,7 +70,6 @@ M3.bHardwareEnable := stoEnable;
 M4.bHardwareEnable := stoEnable;
 M5.bHardwareEnable := stoEnable;
 
-
 // Start Autocoupling
 fbAutoCoupleX(nGantryTol:=nGantryTolX, Master:=M3, MasterEnc:=x_up_enc, Slave:=M4,
 	          SlaveEnc:=x_dwn_enc, bExecuteCouple:=bExecuteCoupleX,
@@ -85,9 +87,5 @@ fbMotionStage_x_up  (stMotionStage:=M3);
 fbMotionStage_x_dwn (stMotionStage:=M4);
 fbMotionStage_pitch (stMotionStage:=M5);]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="3" Count="41" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>

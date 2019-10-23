@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.14">
   <POU Name="MAIN" Id="{2ce36a91-321d-4828-96a2-d7e21b9a58d0}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -42,6 +42,14 @@ VAR
 	nCurrGantryY : LINT;
 	nGantryTolX : LINT := 25000;
 	nGantryTolY : LINT := 25000;
+	
+	// Add Some Encoder Readback and Storage:
+	fbData : FB_LREALBuffer;
+	bExecuteDataStorage : BOOL := TRUE;
+	fbStats : FB_BasicStats;
+	arrEncOutput : ARRAY [1..1000] OF LREAL;
+	fEncMean : LREAL;
+	fEncStDev : LREAL;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[// M1K1
@@ -85,7 +93,25 @@ fbMotionStage_y_up  (stMotionStage:=M1);
 fbMotionStage_y_dwn (stMotionStage:=M2);
 fbMotionStage_x_up  (stMotionStage:=M3);
 fbMotionStage_x_dwn (stMotionStage:=M4);
-fbMotionStage_pitch (stMotionStage:=M5);]]></ST>
+fbMotionStage_pitch (stMotionStage:=M5);
+
+// Add Some Encoder Readback and Storage:
+fbData(bExecute:=bExecuteDataStorage,
+       fInput:=ULINT_TO_LREAL(y_up_enc.Count),
+       arrOutput=>arrEncOutput);
+fbStats(aSignal:=arrEncOutput,
+	    bAlwaysCalc:=TRUE,
+		fMean=>fEncMean,
+		fStDev=>fEncStDev);]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="3" Count="40" />
+      <LineId Id="85" Count="2" />
+      <LineId Id="95" Count="1" />
+      <LineId Id="93" Count="0" />
+      <LineId Id="98" Count="1" />
+      <LineId Id="103" Count="0" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

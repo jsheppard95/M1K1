@@ -42,7 +42,7 @@ VAR
 	nCurrGantryY : LINT;
 	nGantryTolX : LINT := 25000;
 	nGantryTolY : LINT := 25000;
-	
+
 	// Add Some Encoder Readback and Storage:
 	fbData : FB_LREALBuffer;
 	bExecuteDataStorage : BOOL := TRUE;
@@ -97,7 +97,7 @@ fbMotionStage_pitch (stMotionStage:=M5);
 
 // Add Some Encoder Readback and Storage:
 fbData(bExecute:=bExecuteDataStorage,
-       fInput:=ULINT_TO_LREAL(y_up_enc.Count),
+       fInput:=M5.stAxisStatus.fActPosition,
        arrOutput=>arrEncOutput);
 fbStats(aSignal:=arrEncOutput,
 	    bAlwaysCalc:=TRUE,

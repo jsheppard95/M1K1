@@ -54,9 +54,9 @@
     <Folder Include="POUs" />
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="LCLS General-sheppard">
-      <DefaultResolution>LCLS General-sheppard, * (SLAC)</DefaultResolution>
-      <Namespace>LCLS_General_sheppard</Namespace>
+    <PlaceholderReference Include="LCLS General">
+      <DefaultResolution>LCLS General, * (SLAC)</DefaultResolution>
+      <Namespace>LCLS_General</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="Tc2_MC2">
       <DefaultResolution>Tc2_MC2, * (Beckhoff Automation GmbH)</DefaultResolution>
@@ -94,8 +94,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderResolution Include="LCLS General-sheppard">
-      <Resolution>LCLS General-sheppard, * (SLAC)</Resolution>
+    <PlaceholderResolution Include="LCLS General">
+      <Resolution>LCLS General, * (SLAC)</Resolution>
     </PlaceholderResolution>
   </ItemGroup>
   <ProjectExtensions>

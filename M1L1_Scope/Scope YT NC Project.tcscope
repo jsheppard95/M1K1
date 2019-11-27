@@ -18,7 +18,7 @@
 &lt;/Layout&gt;</LayoutString>
   <Operating>
     <RecordTime>36000000000</RecordTime>
-    <DataFileName>C:\Users\sheppard\Documents\Visual Studio 2013\Projects\M1K1</DataFileName>
+    <DataFileName>C:\Users\sheppard\Documents\Visual Studio 2013\Projects\M1K1_ScopeFiles</DataFileName>
     <RunMode>ClientStart</RunMode>
     <StopMode>AutoStop</StopMode>
     <ServerUseFileStore>true</ServerUseFileStore>
@@ -126,9 +126,9 @@
                 <SymbolName>AXES.pitch.ACTPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>169</FileHandle>
+                <FileHandle>50</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -351,9 +351,9 @@
                 <SymbolName>AXES.pitch.SETPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>170</FileHandle>
+                <FileHandle>51</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -610,9 +610,9 @@
                 <SymbolName>AXES.pitch.ACTVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>171</FileHandle>
+                <FileHandle>52</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -835,9 +835,9 @@
                 <SymbolName>AXES.pitch.SETVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>172</FileHandle>
+                <FileHandle>53</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1094,9 +1094,9 @@
                 <SymbolName>AXES.pitch.POSDIFF</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>173</FileHandle>
+                <FileHandle>54</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1353,9 +1353,9 @@
                 <SymbolName>Axes.x_dwn.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>174</FileHandle>
+                <FileHandle>55</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1578,9 +1578,9 @@
                 <SymbolName>Axes.x_dwn.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>175</FileHandle>
+                <FileHandle>56</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1837,9 +1837,9 @@
                 <SymbolName>Axes.x_dwn.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>176</FileHandle>
+                <FileHandle>57</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2062,9 +2062,9 @@
                 <SymbolName>Axes.x_dwn.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>177</FileHandle>
+                <FileHandle>58</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2321,9 +2321,9 @@
                 <SymbolName>Axes.x_dwn.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>178</FileHandle>
+                <FileHandle>59</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2573,16 +2573,16 @@
               <Acquisition>
                 <DataType>INT64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>646048</IndexOffset>
+                <IndexOffset>663448</IndexOffset>
                 <Unit />
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
                 <SymbolName>MAIN.nCurrGantryX</SymbolName>
                 <SymbolComment> Gantry variables</SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>179</FileHandle>
+                <FileHandle>60</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2832,16 +2832,16 @@
               <Acquisition>
                 <DataType>INT64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>646056</IndexOffset>
+                <IndexOffset>663456</IndexOffset>
                 <Unit />
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
                 <SymbolName>MAIN.nCurrGantryY</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>180</FileHandle>
+                <FileHandle>61</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
